@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Himesh Verma's Professional Portfolio - Full Stack Developer">
+    <meta name="author" content="Himesh Verma">
+    <title>Portfolio | Himesh Verma</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/themify-icons@1.0.0/css/themify-icons.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom Dark Theme -->
+	<link rel="stylesheet" href="style-dark.css">
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <style>
+        /* Additional portfolio-specific styles */
+        .portfolio-section {
+            padding: 100px 0;
+            background-color: var(--dark-bg);
+        }
+        
+        .portfolio-item {
+            background: var(--dark-card);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: 1px solid var(--border-color);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+            border-color: var(--primary);
+        }
+        
+        .portfolio-title {
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .portfolio-category {
+            color: var(--secondary);
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+        
+        .portfolio-description {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+        
+        .filters {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+        
+        .filter-btn {
+            background: var(--dark-card);
+            color: var(--text-secondary);
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            letter-spacing: 1px;
+        }
+        
+        .filter-btn.active,
+        .filter-btn:hover {
+            background: var(--primary);
+            color: white;
+            box-shadow: 0 5px 15px rgba(157, 0, 255, 0.3);
+        }
+        
+    </style>
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index-dark.html">Himesh Verma</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index-dark.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index-dark.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="portfolio-section">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up"><span class="text-danger">My</span> Portfolio</h2>
+            <p class="text-center mb-5 text-muted" data-aos="fade-up">Explore my projects showcasing expertise in AI/ML, chatbots, data analysis, and web development</p>
+            
+            <div class="filters" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="*">All</button>
+                <button class="filter-btn" data-filter=".ai">AI/ML</button>
+                <button class="filter-btn" data-filter=".chatbot">Chatbots</button>
+                <button class="filter-btn" data-filter=".web">Web Development</button>
+                <button class="filter-btn" data-filter=".analysis">Data Analysis</button>
+            </div>
+            
+            <div class="row portfolio-container">
+                <!-- Portfolio Item 1: WhatsApp Sentiment Analysis -->
+                <div class="col-md-6 col-lg-4 mb-4 ai analysis" data-aos="fade-up">
+                    <div class="portfolio-item">
+                        <h4 class="portfolio-title">WhatsApp Sentiment Analysis</h4>
+                        <p class="portfolio-category">AI/ML • Data Analysis</p>
+                        <p class="portfolio-description">A comprehensive sentiment analysis tool for WhatsApp chat data focusing on sustainability topics. Built with Python and machine learning algorithms to analyze conversation patterns and emotional trends.</p>
+                        <a href="https://github.com/Himesh1511/Sentiment-Analysis-Of-WhatsApp-Chat-For-Sustainability" target="_blank" class="btn btn-primary">
+                            <i class="mdi mdi-github mr-2"></i>View on GitHub
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 2: Groq LLaMA-3 Chatbot -->
+                <div class="col-md-6 col-lg-4 mb-4 ai chatbot" data-aos="fade-up" data-aos-delay="100">
+                    <div class="portfolio-item">
+                        <h4 class="portfolio-title">Groq LLaMA-3 Chatbot</h4>
+                        <p class="portfolio-category">AI/ML • Chatbot</p>
+                        <p class="portfolio-description">An advanced chatbot powered by LLaMA-3 and optimized with Groq technology. Features intelligent conversation capabilities, context awareness, and natural language processing for enhanced user interactions.</p>
+                        <a href="https://github.com/Himesh1511/Groq-Chatbot-powered-by-LLaMA-3" target="_blank" class="btn btn-primary">
+                            <i class="mdi mdi-github mr-2"></i>View on GitHub
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 3: VS Code AI Extension -->
+                <div class="col-md-6 col-lg-4 mb-4 web ai" data-aos="fade-up" data-aos-delay="200">
+                    <div class="portfolio-item">
+                        <h4 class="portfolio-title">VS Code AI Extension</h4>
+                        <p class="portfolio-category">Web Development • AI/ML</p>
+                        <p class="portfolio-description">A powerful Visual Studio Code extension built with TypeScript that integrates AI capabilities directly into the development environment. Enhances coding productivity with AI-powered suggestions and automation.</p>
+                        <a href="https://github.com/Himesh1511/VS-Code-AI-extension-using-Typescript" target="_blank" class="btn btn-primary">
+                            <i class="mdi mdi-github mr-2"></i>View on GitHub
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 4: Chat Analysis Tool -->
+                <div class="col-md-6 col-lg-4 mb-4 analysis ai" data-aos="fade-up" data-aos-delay="300">
+                    <div class="portfolio-item">
+                        <h4 class="portfolio-title">Chat Analysis Tool</h4>
+                        <p class="portfolio-category">Data Analysis • AI/ML</p>
+                        <p class="portfolio-description">A comprehensive chat analysis platform that processes conversation data to extract insights, patterns, and statistics. Features data visualization, sentiment tracking, and behavioral analysis capabilities.</p>
+                        <a href="https://github.com/Himesh1511/Chat_analysis" target="_blank" class="btn btn-primary">
+                            <i class="mdi mdi-github mr-2"></i>View on GitHub
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 5: Simple Chatbot -->
+                <div class="col-md-6 col-lg-4 mb-4 chatbot ai" data-aos="fade-up" data-aos-delay="400">
+                    <div class="portfolio-item">
+                        <h4 class="portfolio-title">Simple Chatbot</h4>
+                        <p class="portfolio-category">Chatbot • AI/ML</p>
+                        <p class="portfolio-description">A foundational chatbot implementation demonstrating core conversational AI principles. Built with Python, featuring natural language processing, intent recognition, and response generation capabilities.</p>
+                        <a href="https://github.com/Himesh1511/simple_chatbot" target="_blank" class="btn btn-primary">
+                            <i class="mdi mdi-github mr-2"></i>View on GitHub
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 6: Coming Soon -->
+                <div class="col-md-6 col-lg-4 mb-4 web" data-aos="fade-up" data-aos-delay="500">
+                    <div class="portfolio-item">
+                        <h4 class="portfolio-title">More Projects Coming Soon</h4>
+                        <p class="portfolio-category">Stay Tuned</p>
+                        <p class="portfolio-description">Exciting new projects are in development! Check back soon for more innovative solutions in AI/ML, web development, and data analysis. Follow my GitHub for the latest updates.</p>
+                        <a href="https://github.com/Himesh1511" target="_blank" class="btn btn-outline">
+                            <i class="mdi mdi-github mr-2"></i>Follow on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer py-3">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 Himesh Verma. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- core  -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
+    <!-- Custom script -->
+    <script src="script-dark.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+        
+        // Simple portfolio filtering
+        $(document).ready(function() {
+            // Show all items initially
+            $('.portfolio-container > div').show();
+            
+            // Filter items on button click
+            $('.filters').on('click', '.filter-btn', function() {
+                var filterValue = $(this).attr('data-filter');
+                
+                // Show/hide items based on filter
+                if (filterValue === '*') {
+                    $('.portfolio-container > div').show();
+                } else {
+                    $('.portfolio-container > div').hide();
+                    $('.portfolio-container > div' + filterValue).show();
+                }
+                
+                // Active class
+                $('.filter-btn').removeClass('active');
+                $(this).addClass('active');
+            });
+        });
+    </script>
+</body>
+</html>
